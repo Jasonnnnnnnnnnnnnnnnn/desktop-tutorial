@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.blue,
           title: const Text(
-            'Profile',
+            'My Portfolio',
             style: TextStyle(fontSize: 40),
           ),
         ),
@@ -35,16 +35,71 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(20.0),
+                padding: const EdgeInsets.all(15.0),
                 child: Text(
                   'Thitiphong Nimmak',
                   style: TextStyle(fontSize: 30),
                 ),
               ),
               Text(
-                'ชอบดูหนัง อ่านการ์ตูน เล่นเกมออนไลน์ ฟังเพลง ชอบคุยกับเพื่อน ชอบดูสตรีมเกม อ่านหนังสือนิดหน่อย เขียน code เล็กน้อย  ',
-                style: TextStyle(fontSize: 25),
+                'Backend Developer',
               ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  'ชอบดูหนัง อ่านการ์ตูน เล่นเกมออนไลน์ ฟังเพลง ชอบคุยกับเพื่อน ชอบดูสตรีมเกม อ่านหนังสือนิดหน่อย เขียน code เวลาว่างในบางครั้ง',
+                  style: TextStyle(fontSize: 25),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: Image(image: AssetImage('images/flutter-96.png')),
+                  ),
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: Image(image: AssetImage('images/react-80.png')),
+                  ),
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: Image(image: AssetImage('images/vue-js-96.png')),
+                  ),
+                  SizedBox(
+                    width: 100,
+                    height: 100,
+                    child: Image(image: AssetImage('images/angular-96.png')),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.email),
+                  SizedBox(width: 10),
+                  Text(
+                    '64160048@go.buu.ac.th',
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ],
+              ),
+              Row(
+                children: [
+                  Icon(Icons.phone),
+                  SizedBox(width: 10),
+                  Text(
+                    '0968340532',
+                    style: TextStyle(fontSize: 25),
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Text('Contact Me'),
+              )
             ],
           ),
         ),
